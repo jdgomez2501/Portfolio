@@ -68,7 +68,7 @@ const About = () => {
               <div className="w-full max-w-md aspect-[3/4] rounded-lg overflow-hidden shadow-lg bg-muted">
                 <img 
                   src={about_photo} 
-                  alt="About Johnathan Caselles"
+                  alt="About Jesus Daniel Gomez"
                   className="w-full h-full object-cover"
                 />
               </div>

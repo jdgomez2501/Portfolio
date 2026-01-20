@@ -12,14 +12,14 @@ import qair_photo1 from "@/assets/projects/qair/pcb.png";
 import qair_photo2 from "@/assets/projects/qair/pcb_2d.png";
 
 
-import robot_cover from "@/assets/projects/Robot3t/cover.png";
-import robot_video1 from "@/assets/projects/Robot3t/test.mp4";
-import robot_photo1 from "@/assets/projects/Robot3t/side_view.png";
-import robot_photo2 from "@/assets/projects/Robot3t/sagital_view.png";
-import robot_photo3 from "@/assets/projects/Robot3t/explosion_transmision.png";
-import robot_photo4 from "@/assets/projects/Robot3t/explosion_gripper.png";
-import robot_photo5 from "@/assets/projects/Robot3t/top_view.png";
-import robot_photo6 from "@/assets/projects/Robot3t/base_focus.png";
+import robot_cover from "@/assets/projects/robot3t/cover.png";
+import robot_video1 from "@/assets/projects/robot3t/test.mp4";
+import robot_photo1 from "@/assets/projects/robot3t/side_view.png";
+import robot_photo2 from "@/assets/projects/robot3t/sagital_view.png";
+import robot_photo3 from "@/assets/projects/robot3t/explosion_transmision.png";
+import robot_photo4 from "@/assets/projects/robot3t/explosion_gripper.png";
+import robot_photo5 from "@/assets/projects/robot3t/top_view.png";
+import robot_photo6 from "@/assets/projects/robot3t/base_focus.png";
 
 import rocco_cover from "@/assets/projects/rocco/cover.png";
 import rocco_video1 from "@/assets/projects/rocco/demo.mp4";

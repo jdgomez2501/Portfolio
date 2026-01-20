@@ -26,7 +26,7 @@ const Hero = () => {
               <div className="w-64 h-64 md:w-80 md:h-80 rounded-full bg-muted overflow-hidden shadow-lg">
                 <img 
                   src={photo_hero} 
-                  alt="Johnathan Caselles"
+                  alt="Jesus Daniel Gomez"
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -37,7 +37,7 @@ const Hero = () => {
               <div className="space-y-4">
                 <p className="text-lg text-muted-foreground">Hello, I'm</p>
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-foreground">
-                  Johnathan Caselles
+                  Jesus Daniel Gomez
                 </h1>
                 <p className="text-xl md:text-2xl bg-gradient-primary bg-clip-text text-transparent font-semibold">
                   MSc. in Mechatronics and Robotics Engineering
