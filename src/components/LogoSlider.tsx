@@ -1,36 +1,39 @@
 const logos = [
-  { name: "VS Code", url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" },
+  { name: "Quartus", url: "https://electroniques-biz.b-cdn.net/app/uploads/sites/5/2014/08/c936dd70be92a2fa2c6364fd37eb4467-scaled.jpg" },
+  { name: "Gazebo", url: "https://images.seeklogo.com/logo-png/31/2/gazebo-logo-png_seeklogo-317144.png" },
   { name: "Ubuntu", url: "https://cdn.worldvectorlogo.com/logos/ubuntu-1.svg" },
-  { name: "Git", url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" },
-  { name: "Fanuc", url: "https://static.spacecrafted.com/fb60cc3d39b74f0786cc14078ce866c7/i/bdd8c488aace43b58e15fe8460df8ae1/1/4SoifmQp45JMgBnHp7ed2/FANUC%20logo.png" },
-  { name: "Notion", url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/notion/notion-original.svg" },
-  { name: "SolidWorks", url: "https://cdn.worldvectorlogo.com/logos/solidworks-logo-1.svg" },
-  { name: "C++", url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" },
-  { name: "Staubli", url: "https://www.eproject4.com/wp-content/uploads/2018/06/staubli-black.png" },
-  { name: "Python", url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" },
-  { name: "Universal Robots", url: "https://www.robotics247.com/images/logos/universal-robots-logo-555.png" },
-  { name: "Raspberry Pi", url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/raspberrypi/raspberrypi-original.svg" },
-  { name: "Cura Ultimaker", url: "https://itsmeadmade.com/wp-content/uploads/2023/04/Screenshot-2023-04-01-at-1.30.26-PM.png" },
-  { name: "Visual Studio", url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/visualstudio/visualstudio-plain.svg" },
-  { name: "EtherCAT", url: "https://guideautomation.com/wp-content/uploads/2014/11/Ethercat-logo.png" },
-  { name: "Arduino", url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/arduino/arduino-original.svg" },
-  
   { name: "VS Code", url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" },
-  { name: "Ubuntu", url: "https://cdn.worldvectorlogo.com/logos/ubuntu-1.svg" },
   { name: "Git", url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" },
-  { name: "Fanuc", url: "https://static.spacecrafted.com/fb60cc3d39b74f0786cc14078ce866c7/i/bdd8c488aace43b58e15fe8460df8ae1/1/4SoifmQp45JMgBnHp7ed2/FANUC%20logo.png" },
-  { name: "Notion", url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/notion/notion-original.svg" },
+  { name: "GitHub", url: "https://cdn.iconscout.com/icon/free/png-256/free-github-logo-icon-svg-download-png-8630395.png?f=webp" },
+  { name: "ROS", url: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Ros_logo.svg/1280px-Ros_logo.svg.png" },
   { name: "SolidWorks", url: "https://cdn.worldvectorlogo.com/logos/solidworks-logo-1.svg" },
-  { name: "C++", url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" },
-  { name: "Staubli", url: "https://www.eproject4.com/wp-content/uploads/2018/06/staubli-black.png" },
+  { name: "C", url: "https://upload.wikimedia.org/wikipedia/commons/1/19/C_Logo.png" },  
   { name: "Python", url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" },
-  { name: "Universal Robots", url: "https://www.robotics247.com/images/logos/universal-robots-logo-555.png" },
+  { name: "Matlab", url: "https://upload.wikimedia.org/wikipedia/commons/2/21/Matlab_Logo.png" },
   { name: "Raspberry Pi", url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/raspberrypi/raspberrypi-original.svg" },
-  { name: "Cura Ultimaker", url: "https://itsmeadmade.com/wp-content/uploads/2023/04/Screenshot-2023-04-01-at-1.30.26-PM.png" },
+  { name: "Inventor", url: "https://innovate.utk.edu/wp-content/uploads/2019/09/Inventor-e1523957011698.png" },
   { name: "Visual Studio", url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/visualstudio/visualstudio-plain.svg" },
-  { name: "EtherCAT", url: "https://guideautomation.com/wp-content/uploads/2014/11/Ethercat-logo.png" },
+  { name: "Linux", url: "https://www.clipartmax.com/png/middle/249-2494952_penguin-clipart-profile-linux-logo-vector.png" },
   { name: "Arduino", url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/arduino/arduino-original.svg" },
+  { name: "Zenoh", url: "https://zenoh.io/img/zenoh-dragon-small.png" },
   
+  { name: "Quartus", url: "https://electroniques-biz.b-cdn.net/app/uploads/sites/5/2014/08/c936dd70be92a2fa2c6364fd37eb4467-scaled.jpg" },
+  { name: "Gazebo", url: "https://images.seeklogo.com/logo-png/31/2/gazebo-logo-png_seeklogo-317144.png" },
+  { name: "Ubuntu", url: "https://cdn.worldvectorlogo.com/logos/ubuntu-1.svg" },
+  { name: "VS Code", url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" },
+  { name: "Git", url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" },
+  { name: "GitHub", url: "https://cdn.iconscout.com/icon/free/png-256/free-github-logo-icon-svg-download-png-8630395.png?f=webp" },  
+  { name: "ROS", url: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Ros_logo.svg/1280px-Ros_logo.svg.png" },
+  { name: "SolidWorks", url: "https://cdn.worldvectorlogo.com/logos/solidworks-logo-1.svg" },
+  { name: "C", url: "https://upload.wikimedia.org/wikipedia/commons/1/19/C_Logo.png" },
+  { name: "Python", url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" },
+  { name: "Matlab", url: "https://upload.wikimedia.org/wikipedia/commons/2/21/Matlab_Logo.png" },
+  { name: "Raspberry Pi", url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/raspberrypi/raspberrypi-original.svg" },
+  { name: "Inventor", url: "https://innovate.utk.edu/wp-content/uploads/2019/09/Inventor-e1523957011698.png" },
+  { name: "Visual Studio", url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/visualstudio/visualstudio-plain.svg" },
+  { name: "Linux", url: "https://www.clipartmax.com/png/middle/249-2494952_penguin-clipart-profile-linux-logo-vector.png" },
+  { name: "Arduino", url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/arduino/arduino-original.svg" },
+  { name: "Zenoh", url: "https://zenoh.io/img/zenoh-dragon-small.png" },
 ];
 
 
@@ -48,7 +51,7 @@ const LogoSlider = () => {
         {logos.map((logo, index) => (
           <div 
             key={`first-${index}`}
-            className="flex-shrink-0 mx-8 grayscale hover:grayscale-0 transition-all duration-400"
+            className="flex-shrink-0 mx-8 transition-all duration-400"
           >
             <img 
               src={logo.url} 

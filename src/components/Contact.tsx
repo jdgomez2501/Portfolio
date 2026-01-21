@@ -18,7 +18,7 @@ const Contact = () => {
             <h2 className="text-4xl md:text-5xl font-bold tracking-tight">Let's Connect</h2>
             <div className="h-1 w-20 bg-gradient-primary rounded-full mx-auto" />
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              For professional inquiries or collaboration opportunities, you’re welcome to reach out.
+              For professional opportunities or collaboration offers, you’re welcome to reach out.
             </p>
           </motion.div>
           

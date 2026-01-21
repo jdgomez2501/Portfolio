@@ -1,6 +1,6 @@
 import { Card } from "@/components/ui/card";
 import { motion } from "framer-motion";
-
+import LogoSlider from "./LogoSlider";
 const skillCategories = [
   {
     title: "Programming",
@@ -45,17 +45,19 @@ const Skills = () => {
     <section className="py-24 relative" id="skills">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
+          
           <motion.div 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
-            className="space-y-4 mb-12 text-center"
+            className="space-y-4 mb-1 text-center"
           >
             <h2 className="text-4xl md:text-5xl font-bold tracking-tight">Skills & Expertise</h2>
             <div className="h-1 w-20 bg-gradient-primary rounded-full mx-auto" />
           </motion.div>
-          
+          {/* Logo Slider */}
+          <LogoSlider />
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {skillCategories.map((category, index) => (
               <motion.div

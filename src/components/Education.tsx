@@ -1,5 +1,5 @@
 import { GraduationCap } from "lucide-react";
-import WorldMap from "./WorldMap";
+
 import { motion } from "framer-motion";
 
 const education = [
@@ -41,11 +41,6 @@ const Education = () => {
             <h2 className="text-4xl md:text-5xl font-bold tracking-tight">Academic Path</h2>
             <div className="h-1 w-20 bg-gradient-primary rounded-full mx-auto" />
           </motion.div>
-
-          {/* World Map */}
-          <div className="mb-16">
-            <WorldMap />
-          </div>
           
           <div className="space-y-8 max-w-4xl mx-auto">
             {education.map((item, index) => (

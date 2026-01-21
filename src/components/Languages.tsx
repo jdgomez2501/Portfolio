@@ -5,7 +5,7 @@ const languages = [
   { name: "Spanish", level: "Native", proficiency: 100 },
   { name: "English", level: "Fluent (C1)", proficiency: 90 },
   { name: "French", level: "Proficient (B2)", proficiency: 75 },
-  { name: "Portuguese", level: "Basic (A2)", proficiency: 30 },
+  { name: "Italian", level: "Basic (A2)", proficiency: 30 },
 ];
 
 const Languages = () => {
