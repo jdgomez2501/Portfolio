@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
-import { Mail, Linkedin, Github } from "lucide-react";
+import { CONTACT } from "@/config/contact";
 import { motion } from "framer-motion";
+import { Mail, Linkedin, Github } from "lucide-react";
 
 const Contact = () => {
   return (
@@ -33,8 +34,7 @@ const Contact = () => {
               className="bg-primary text-primary-foreground hover:bg-primary/90 text-lg px-12"
               asChild
             >
-              <a href="&#x6D;&#x61;&#x69;&#x6C;&#x74;&#x6F;&#x3A;&#x6A;&#x6F;&#x68;&#x6E;&#x61;&#x74;&#x68;&#x61;&#x6E;&#x2E;&#x63;&#x61;&#x73;&#x65;&#x6C;&#x6C;&#x65;&#x73;&#x40;&#x65;&#x75;&#x34;&#x6D;&#x2E;&#x65;&#x75;">
-                <Mail className="mr-2 h-5 w-5" />
+              <a href={`mailto:${CONTACT.email}`}>
                 Send Me an Email
               </a>
             </Button>
@@ -42,7 +42,7 @@ const Contact = () => {
             <div className="flex gap-6 justify-center items-center pt-4">
               <span className="text-muted-foreground">Or connect via:</span>
               <a 
-                href="https://www.linkedin.com/in/jcaselles/" 
+                href={CONTACT.linkedin}
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="transition-opacity hover:opacity-70"
@@ -51,7 +51,7 @@ const Contact = () => {
                 <Linkedin className="h-8 w-8 text-foreground" />
               </a>
               <a 
-                href="https://github.com/Jotace17" 
+                href={CONTACT.github}
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="transition-opacity hover:opacity-70"

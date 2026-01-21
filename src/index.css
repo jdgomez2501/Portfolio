@@ -8,43 +8,53 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 0 0% 10%;
+    /* ===== Core ===== */
+    --background: 217 40% 6%;
+    --foreground: 210 40% 96%;
 
-    --card: 0 0% 98%;
-    --card-foreground: 0 0% 10%;
+    /* ===== Surfaces / Cards ===== */
+    --card: 222 35% 10%;
+    --card-foreground: 210 40% 96%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 10%;
+    --popover: 222 35% 9%;
+    --popover-foreground: 210 40% 96%;
 
-    --primary: 217 91% 60%;
-    --primary-foreground: 0 0% 100%;
+    /* ===== Brand / Primary ===== */
+    --primary: 215 85% 58%;
+    --primary-foreground: 222 40% 6%;
 
-    --secondary: 0 0% 20%;
-    --secondary-foreground: 0 0% 100%;
+    /* ===== Secondary ===== */
+    --secondary: 222 25% 16%;
+    --secondary-foreground: 210 40% 96%;
 
-    --muted: 0 0% 96%;
-    --muted-foreground: 0 0% 45%;
+    /* ===== Muted / subtle text ===== */
+    --muted: 222 20% 14%;
+    --muted-foreground: 215 15% 65%;
 
-    --accent: 217 91% 60%;
-    --accent-foreground: 0 0% 100%;
+    /* ===== Accent ===== */
+    --accent: 215 85% 58%;
+    --accent-foreground: 222 40% 6%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 0 0% 100%;
+    /* ===== States ===== */
+    --destructive: 0 72% 52%;
+    --destructive-foreground: 210 40% 96%;
 
-    --border: 0 0% 90%;
-    --input: 0 0% 90%;
-    --ring: 217 91% 60%;
+    /* ===== UI ===== */
+    --border: 222 20% 18%;
+    --input: 222 20% 18%;
+    --ring: 215 85% 58%;
 
     --radius: 0.75rem;
 
-    /* Custom portfolio tokens */
-    --gradient-start: 217 91% 60%;
-    --gradient-end: 217 91% 45%;
-    --surface: 0 0% 97%;
-    --surface-hover: 0 0% 94%;
+    /* ===== Custom portfolio tokens ===== */
+    --gradient-start: 215 85% 58%;
+    --gradient-end: 230 85% 50%;
+
+    --surface: 222 30% 11%;
+    --surface-hover: 222 30% 15%;
   }
 }
+
 
 @layer base {
   * {

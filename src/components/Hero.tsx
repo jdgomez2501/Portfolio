@@ -40,7 +40,7 @@ const Hero = () => {
                   Jesus Daniel Gomez
                 </h1>
                 <p className="text-xl md:text-2xl bg-gradient-primary bg-clip-text text-transparent font-semibold">
-                  MSc. in Mechatronics and Robotics Engineering
+                  Mechatronics Engineer - MSc. in Embedded Systems 
                 </p>
               </div>
 
@@ -50,7 +50,7 @@ const Hero = () => {
                   variant="secondary" 
                   className="group" 
                   onClick={() =>
-                  (window.location.href = "https://drive.google.com/file/d/1h81pI8GACOJKDLFrxuMLxhlMBR_xQLt0/view?usp=drive_link")
+                  (window.location.href = "https://drive.google.com/file/d/1ccRHz6JJq_8VXhW2oUaHONuqmWJYaDvi/view?usp=sharing")
                   }
                 >
                   <Download className="mr-2 h-4 w-4" />
@@ -62,7 +62,7 @@ const Hero = () => {
                   variant="secondary" 
                   className="group"
                   onClick={() =>
-                  (window.location.href = "https://drive.google.com/file/d/12xCQabItwQzRK4zVXYXUMIaubJv8ngoX/view?usp=drive_link")
+                  (window.location.href = "https://drive.google.com/file/d/1Qua77zAj-bVpIG1Bc4PvE7kxguxPem5B/view?usp=sharing")
                   }
                 >
                   <Download className="mr-2 h-4 w-4" />
