@@ -7,28 +7,24 @@ const skillCategories = [
     skills: ["C", "Python", "VHDL", "Verilog", "Bash", "SQL", "Ladder", "Grafcet", "Assembly"]
   },
   {
-    title: "Soft Skills",
-    skills: ["Problem-solving","Self-learning", "Adaptability", "Proactivity","Critical thinking","Teamwork"]
+    title: "Robotics Development",
+    skills: ["ROS2", "Linux", "Gazebo", "Mobile robots","Nav2", "SLAM", "Sensor integration", "DDS", "Zenoh"]
   },
   {
-    title: "Robotics Development",
-    skills: ["ROS2", "Linux", "Gazebo", "DDS", "Inventor", "Proteus", "Software-hardware integration","Arduino", "Raspberry Pi", "ESP32",]
+    title: "Mechatronics expertise",
+    skills: ["Debugging","Documentation","Digital design", "Testing & Validation","Software-Hardware integration"]
   },
   {
     title: "Software & Hardware",
-    skills: ["ROS2", "Matlab/Simulink", "Quartus", "Inventor", "Proteus", "Gazebo","Arduino", "Raspberry Pi", "ESP32", "LabView", "Vivado","KiCad"]
+    skills: ["ROS2", "Matlab/Simulink", "Quartus", "Inventor","FPGA", "Proteus","Arduino", "Raspberry Pi", "ESP32",  "STM32", "LabView", "Vivado","KiCad"]
   },
   {
-    title: "Robotics Development",
-    skills: ["FPGA", "Embedded systems", "Microcontrollers", "Data adquisition", "PCB design"]
+    title: "Soft Skills and Collaboration tools",
+    skills: ["Problem-solving","Self-learning", "Adaptability", "Proactivity","Git","Critical thinking","Teamwork", "GitHub", "Visual Studio","Overleaf", "Pack Office"]
   },
   {
-    title: "COM Protocols",
-    skills: ["Wi-Fi", "Bluetooth", "SPI/I2C", "CAN", "UART/USART", "Ethernet", "Zenoh"]
-  },
-  {
-    title: "Coding and collaboration tools",
-    skills: ["Git", "Visual Studio", "GitHub","Overleaf", "Pack Office"]
+    title: "Automation, Modelisation & COM Protocols",
+    skills: ["Wi-Fi", "Bluetooth", "SPI/I2C", "CAN", "UART/USART", "Ethernet", "Zenoh","TIA Portal", "Automation Studio", "LabView", "COMSOL", "SimCenter"]
   }
 ];
 

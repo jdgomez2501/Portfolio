@@ -56,23 +56,20 @@ const About = () => {
               </p>
               
               <p>
-                Originally from Cúcuta, a city in eastern Colombia. I received a B.Sc. 
-                in Mechatronics Engineering from Universidad Autónoma del Caribe and an M.Sc. also in Mechatronics Engineering, 
-                but this time from University of Oviedo in Spain.
+                My journey started at Universidad EIA, where I pursued a B.Sc. in Mechatronics Engineering. During my final semesters, I decided to push
+                further and enrolled in a double degree program, which brought me to France to complete an M.Sc. in Embedded Systems and Robotics at IPSA.
+                In 2025, I successfully graduated from both programs with outstanding academic performance, ready to contribute to meaningful, high-impact engineering projects.
               </p>
               
               <p>
-                This experience has given me strong confidence on working with ROS/ROS2 enviroments, FPGA-based systems,
-                Software and Hardware integration, 
-                Throughout my academic and professional journey, I've had the chance to study and collaborate with 
-                multicultural teams on a wide range of projects. These diverse experiences have not only sharpened my 
-                technical expertise but also expanded my approach to innovation and problem-solving.
+                Beyond the degrees, this international journey has deeply shaped the way I work and think. It strengthened my confidence in robotics environments,
+                FPGA-based systems, and hardware/software integration, but also taught me how to collaborate in diverse teams, communicate ideas clearly, and
+                learn fast from others. Living in a new country and learning new languages pushed me to become more autonomous, resilient, and adaptable.
               </p>
 
               <p>
-                I thrive on challenges and aspire to achieve impactful milestones in my career. 
-                I'm excited to bring my skills and passion to your team and contribute to your company's success. 
-                Let's create something remarkable together!
+                These experiences did not just sharpen my technical background, they expanded my mindset. I approach engineering as both a technical and human challenge: building
+                robust systems, solving real problems, and continuously learning from the people and environments around me.
               </p>
             </motion.div>
 

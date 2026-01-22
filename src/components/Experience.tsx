@@ -4,30 +4,43 @@ import { Briefcase, Calendar, MapPin } from "lucide-react";
 const experiences = [
   {
     id: 1,
-    title: "Mechatronics Engineer - Master thesis",
-    company: "Wandercraft",
-    location: "Paris, France",
-    period: "Feb 2023 - Aug 2023",
-    description: "Developed a modular C++ test bench with EtherCAT to validate medical exoskeleton software, achieving sub-10-minute cycles and instant pass/fail reporting. This included 4,000+ automated checks across core scenarios, supported by a custom web dashboard for real-time monitoring and scalable deployment.",
-    technologies: ["C++", "Robotics", "Testbench", "EtherCAT", "Automation", "Medical device", "exoskeleton"],
+    title: "Intern Multi-Agent Autonomous Systems Engineer",
+    company: "ALTEN",
+    location: "Sèvres, France",
+    period: "02/2025 - 08/2025",
+    description: ["Developed embedded C firmware for ESP32 implementing multi-task real-time data acquisition, using FreeRTOS vTasks to guarantee deterministic execution of sensing, display refresh and communication routines.",
+      "Contributed to large-scale system testing, logging, and performance validation in the context of the development of challenge SWARMZ4, a competition for collaborative drone control strategies, using Gazebo, ROS2, and PX4 Autopilot.",
+      "Integrated a temperature/humidity sensor via I2C, with data processing and transmission over Wi-Fi using the Zenoh distributed communication protocol for low-latency telemetry.",
+      "Implemented internal and external communication for a heterogeneous fleet of robots through the integration of the Zenoh protocol (Wi-Fi, DDS, TCP/IP, UDP/IP).",
+      "Worked on ROS2-based modular node design, testing and debugging communication layers within simulation and hardware environments."
+    ],
+    technologies: ["Mobile Robots", "ROS2", "Python","C","FreeRTOS", "Zenoh", "Nav2", "Gazebo","PX4 Autopilot"],
   },
   {
     id: 2,
-    title: "Mechatronics Engineer Junior",
-    company: "Relianz Mining Solutions",
-    location: "Barranquilla, Colombia",
-    period: "Dec 2022 - Apr 2023",
-    description: "Programmed FANUC robots to optimize metal spray coating, reducing times by 35% while ensuring quality compliance. Designed SolidWorks mounting devices and protections that cut prep time by 43% and rework rates from 60% to 5% through standardized procedures and documentation.",
-    technologies: ["Industrial robots", "FANUC", "SolidWorks", "PLC", "Automation", "Industrial Automation", "Mechanical design"],
+    title: "Research Intern – Control Systems Engineering",
+    company: "IPSA",
+    location: "Ivry-sur-Seine, France",
+    period: "06/2024 - 08/2024",
+    description: ["Developed real-time data acquisition and signal-processing for IMU sensor (MPU6050) using I2C and filtering (complementary filter).",
+      "Modeled and simulated control loops (motor speed and pitch angle) using MATLAB/Simulink, validating system behavior under timing and noise constraints.",
+      "Tuned and deployed control algorithms on embedded hardware, ensuring deterministic response and stability.",
+      "Conducted literature analysis of control strategies (PID, SMC) with emphasis on robustness, implementation complexity, and hardware resource constraints.",
+      "Designed and tested new mechanical structures to improve the stability of the system"
+    ],
+    technologies: ["Matlab", "Simulink", "Inventor", "SPI", "I2C", "Arduino","Fast prototyping","C","Multithreading"],
   },
   {
     id: 3,
-    title: "Junior Researcher",
-    company: "GIIM Group - Universidad Autónoma del Caribe",
-    location: "Barranquilla, Colombia",
-    period: "Feb 2020 - Jun 2023",
-    description: "Led prototyping of robotic, biomedical, and IoT systems using Arduino, ESP32, Raspberry Pi, and SolidWorks for real-world applications. Integrated sensors/actuators with I2C, SPI, UART, MQTT protocols and calibration; developed CNN/RNN models in OpenCV/TensorFlow for detection and estimation, securing IP for 6 projects endorsed by Minciencias.",
-    technologies: ["Robotics", "SolidWorks" , "Python", "C++", "Microcontrollers", "Mechatronic design", "Prototyping", "MATLAB", "OpenCV", "TensorFlow", "Neural Networks"],
+    title: "Intern – Maintenance, Process improvement & Reliability Engineer",
+    company: "Avianca",
+    location: "Medellin, Colombia",
+    period: "08/2022 - 02/2023",
+    description: ["Designed and automatically updated a performance dashboard to monitor KPIs and support daily operational diagnostics.",
+      "Automated repetitive processes to extract and deliver the data required by the reliability and maintenance teams.",
+      "Analyzed reports on unused materials in maintenance operations and proposed process improvement initiatives."
+    ],
+    technologies: ["SQL", "Data wrangling", "Skywise", "Data analysis", "AMOS", "Excel", "Pack office","Communication skills",],
   },
 ];
 
@@ -62,9 +75,6 @@ const Experience = () => {
           className="text-center mb-16"
         >
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Professional Experience</h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto">
-            My journey through the industry, building expertise in robotics and automation
-          </p>
         </motion.div>
 
         <motion.div
@@ -108,7 +118,15 @@ const Experience = () => {
                   </div>
                 </div>
 
-                <p className="text-muted-foreground mb-4">{exp.description}</p>
+                <ul className="text-muted-foreground mb-4 list-disc list-inside space-y-1">
+                  {Array.isArray(exp.description) ? (
+                    exp.description.map((item, i) => (
+                      <li key={i}>{item}</li>
+                    ))
+                  ) : (
+                    <li>{exp.description}</li>
+                  )}
+                </ul>
 
                 <div className="flex flex-wrap gap-2">
                   {exp.technologies.map((tech) => (
