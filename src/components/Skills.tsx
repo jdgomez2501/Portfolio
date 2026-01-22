@@ -4,39 +4,31 @@ import LogoSlider from "./LogoSlider";
 const skillCategories = [
   {
     title: "Programming",
-    skills: ["C++", "Python", "Arduino", "Matlab", "OOP", "ROS2", "Ladder", "Assembly"]
-  },
-  {
-    title: "Software and Tools",
-    skills: ["OpenCV", "Jupiter", "Visual Studio", "MPlab", "FLuidSim", "Studio5000"]
-  },
-  {
-    title: "Industrial Robots",
-    skills: ["FANUC", "Universal Robots", "Staubli", "Epson"]
-  },
-  {
-    title: "Mechanical Design",
-    skills: ["SolidWorks", "Cura", "EdgeCam", "Abaqus"]
-  },
-  {
-    title: "Electronic Design",
-    skills: ["Proteus", "EasyEDA", "Altium"]
-  },
-  {
-    title: "Collaboration tools",
-    skills: ["Git", "Notion", "Overleaf", "Office", "Trello"]
-  },
-  {
-    title: "COM Protocols",
-    skills: ["Wi-Fi", "Bluetooth", "SPI/I2C", "MQTT", "UART", "EtherCAT"]
-  },
-  {
-    title: "Development",
-    skills: ["Rapid prototyping", "Microcontrollers", "Data adquisition", "Embedded systems", "Sensor/actuator integration", "PCB design", "Computer vision", "3D printing"]
+    skills: ["C", "Python", "VHDL", "Verilog", "Bash", "SQL", "Ladder", "Grafcet", "Assembly"]
   },
   {
     title: "Soft Skills",
-    skills: ["Problem-solving", "Critical thinking", "Adaptability", "Proactivity"]
+    skills: ["Problem-solving","Self-learning", "Adaptability", "Proactivity","Critical thinking","Teamwork"]
+  },
+  {
+    title: "Robotics Development",
+    skills: ["ROS2", "Linux", "Gazebo", "DDS", "Inventor", "Proteus", "Software-hardware integration","Arduino", "Raspberry Pi", "ESP32",]
+  },
+  {
+    title: "Software & Hardware",
+    skills: ["ROS2", "Matlab/Simulink", "Quartus", "Inventor", "Proteus", "Gazebo","Arduino", "Raspberry Pi", "ESP32", "LabView", "Vivado","KiCad"]
+  },
+  {
+    title: "Robotics Development",
+    skills: ["FPGA", "Embedded systems", "Microcontrollers", "Data adquisition", "PCB design"]
+  },
+  {
+    title: "COM Protocols",
+    skills: ["Wi-Fi", "Bluetooth", "SPI/I2C", "CAN", "UART/USART", "Ethernet", "Zenoh"]
+  },
+  {
+    title: "Coding and collaboration tools",
+    skills: ["Git", "Visual Studio", "GitHub","Overleaf", "Pack Office"]
   }
 ];
 

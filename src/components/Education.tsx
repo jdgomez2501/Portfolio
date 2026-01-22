@@ -4,25 +4,18 @@ import { motion } from "framer-motion";
 
 const education = [
   {
-    degree: "EU4M Master in Robotics and Mechatronics Engineering (2nd year)",
-    institution: "Supmicrotech ENSMM",
-    city: "Besançon, France",
-    period: "2024 - 2025",
-    description: "Specialized in advanced robotics & soft-robotics, computer vision, and distributed mechatronic systems."
+    degree: "Master in Embedded Systems and Robotics (Double Degree)",
+    institution: "Institut Polytechnique des Sciences Avancées (IPSA)",
+    period: "2023 - 2025",
+    city: "Ivry-sur-Seine, France",
+    description: "Completed advanced coursework and project work in real-time embedded systems, multi-agent and swarm robotics, FPGA-based design, system identification and control, and flight dynamics and autopilot systems."
   },
   {
-    degree: "EU4M Master in Robotics and Mechatronics Engineering (1st year)",
-    institution: "Universidad de Oviedo",
-    period: "2023 - 2024",
-    city: "Gijón, Spain",
-    description: "Focused on robotics, automation, mechatronic & mechanical design, and embedded systems."
-  },
-  {
-    degree: "Bachelor of Science in Mechatronics Engineering",
-    institution: "Universidad Autónoma del Caribe",
-    period: "2016 - 2020",
-    city: "Barranquilla, Colombia",
-    description: "Focused on robotics, protoyping, automation, and mechatronic design and development."
+    degree: "Bachelor of Science in Mechatronics Engineering (Double Degree)",
+    institution: "Universidad EIA",
+    period: "2018 - 2025",
+    city: "Envigado, Colombia",
+    description: "Designed and developed robotics and automation projects with strong emphasis on prototyping and mechatronic systems. Work included end-to-end mechatronic design (from client requirements to functional prototypes), analog and digital control of dynamic systems, industrial automation and instrumentation, and robotics-oriented electronics."
   },
 ];
 

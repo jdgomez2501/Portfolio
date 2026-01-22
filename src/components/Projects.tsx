@@ -17,7 +17,7 @@ const Projects = () => {
             transition={{ duration: 0.5 }}
             className="space-y-4 mb-12 text-center"
           >
-            <h2 className="text-4xl md:text-5xl font-bold tracking-tight">Featured Projects</h2>
+            <h2 className="text-4xl md:text-5xl font-bold tracking-tight">Relevant Projects</h2>
             <div className="h-1 w-20 bg-gradient-primary rounded-full mx-auto" />
           </motion.div>
           

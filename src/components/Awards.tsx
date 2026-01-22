@@ -3,58 +3,28 @@ import { motion } from "framer-motion";
 
 const awards = [
   {
-    title: "Published Research Paper",
-    organization: "MDPI Journal",
-    period: "January 2025",
-    description: (
-      <>
-        Published a <a 
-          href="https://www.mdpi.com/2673-4591/83/1/13" 
-          target="_blank" 
-          rel="noopener noreferrer"
-          className="underline hover:underline-offset-2"
-        >
-          paper
-        </a>{" "}
-        on the development of an innovative device for indoor and outdoor air quality measurement, enabling detection and monitoring of hazardous air pollutants impacting health.
-      </>
-    )
+    title: "Dean's List Master's program",
+    organization: "Institut Polytechnique des Sciences Avancées (IPSA)",
+    period: "2023-2025",
+    description: "Consistently ranked in the top 5 of the program for academic performance."
   },
   {
-    title: "Speaker",
-    organization: "III Congress of Technology and Innovation in Engineering and Computing, Lima, Peru",
-    period: "November 2023",
-    description: "Presented a technical talk on the Q-Air device, an innovative system for indoor and outdoor air quality monitoring."
-  },
-  {
-    title: "Outstanding Final Degree Project Award",
-    organization: "Universidad Autónoma del Caribe",
-    period: "July 2023",
-    description: "Recognized for excellence in final year project: development of the Q-Air* device for comprehensive indoor and outdoor air quality monitoring focusing on health-related pollutants."
-  },
-  {
-    title: "Outstanding Graduate Student",
-    organization: "Universidad Autónoma del Caribe",
-    period: "July 2023",
-    description: "Honored for exceptional academic achievement and consistent excellence throughout the degree program."
-  },
-  {
-    title: "Full Scholarship Recipient",
-    organization: "European Union",
+    title: "Scholarship-Loan for a Master's degree abroad",
+    organization: "Colfuturo",
     period: "May 2023",
-    description: "Awarded a full scholarship for the Joint Master Degree in Robotics and Mechatronics Engineering (EU4M)."
+    description: "Awarded a merit-based scholarship-loan to study a high-qualified master's program abroad."
   },
   {
-    title: "Software and Prototype Registrations",
-    organization: "Universidad Autónoma del Caribe - Ministry of Science, Technology, and Innovation, Colombia",
-    period: "2020-2023",
-    description: "Secured intellectual property rights for 6 innovative software solutions and prototypes, officially registered with Colombia's Ministry of Science, Technology, and Innovation."
+    title: "Dean's List Bachelor's program",
+    organization: "Universidad EIA",
+    period: "2018-2023",
+    description: "Consistently ranked among the top students in the program for academic performance."
   },
   {
-    title: "Honor Roll",
-    organization: "Universidad Autónoma del Caribe",
-    period: "2019-2023",
-    description: "Consistently ranked in the top 5 for academic performance each semester throughout the entire degree."
+    title: "Full Scholarship Recipient - Ser Pilo Paga",
+    organization: "ICETEX",
+    period: "December 2017",
+    description: "Awarded a full scholarship to study any Bachelor's program on any high-level university in Colombia for outstanding performance on Colombia’s national standardized exam (ICFES)."
   }
 ];
 
