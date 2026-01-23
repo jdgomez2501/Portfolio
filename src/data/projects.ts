@@ -1,10 +1,7 @@
-import stylet_cover from "@/assets/projects/stylet/cover.png";
-import stylet_photo1 from "@/assets/projects/stylet/setup.png";
-import stylet_photo2 from "@/assets/projects/stylet/sketch_structure.png";
-import stylet_photo3 from "@/assets/projects/stylet/sketch_elements.png";
-import stylet_video1 from "@/assets/projects/stylet/test.mp4";
-import stylet_video2 from "@/assets/projects/stylet/tracking.mp4";
-import stylet_video3 from "@/assets/projects/stylet/aruco.mp4";
+import aemas_cover from "@/assets/projects/aemas/aemas_cover.png";
+import aemas_photo1 from "@/assets/projects/aemas/aemas_map.png";
+import aemas_video1 from "@/assets/projects/aemas/aemas_rviz.mp4";
+import aemas_video2 from "@/assets/projects/aemas/aemas_gazebo.mp4";
 
 import qair_cover from "@/assets/projects/qair/cover.png";
 import qair_video1 from "@/assets/projects/qair/test.mp4";
@@ -12,18 +9,18 @@ import qair_photo1 from "@/assets/projects/qair/pcb.png";
 import qair_photo2 from "@/assets/projects/qair/pcb_2d.png";
 
 
-import robot_cover from "@/assets/projects/robot3t/cover.png";
-import robot_video1 from "@/assets/projects/robot3t/test.mp4";
-import robot_photo1 from "@/assets/projects/robot3t/side_view.png";
-import robot_photo2 from "@/assets/projects/robot3t/sagital_view.png";
-import robot_photo3 from "@/assets/projects/robot3t/explosion_transmision.png";
-import robot_photo4 from "@/assets/projects/robot3t/explosion_gripper.png";
-import robot_photo5 from "@/assets/projects/robot3t/top_view.png";
-import robot_photo6 from "@/assets/projects/robot3t/base_focus.png";
+import robot_cover from "@/assets/projects/de10lite/cover.png";
+import robot_video1 from "@/assets/projects/de10lite/test.mp4";
+import robot_photo1 from "@/assets/projects/de10lite/side_view.png";
+import robot_photo2 from "@/assets/projects/de10lite/sagital_view.png";
+import robot_photo3 from "@/assets/projects/de10lite/explosion_transmision.png";
+import robot_photo4 from "@/assets/projects/de10lite/explosion_gripper.png";
+import robot_photo5 from "@/assets/projects/de10lite/top_view.png";
+import robot_photo6 from "@/assets/projects/de10lite/base_focus.png";
 
-import rocco_cover from "@/assets/projects/rocco/cover.png";
-import rocco_video1 from "@/assets/projects/rocco/demo.mp4";
-import rocco_photo1 from "@/assets/projects/rocco/photo.png";
+import recycle_bot_cover from "@/assets/projects/recycle_bot/cover.png";
+import recycle_bot_video1 from "@/assets/projects/recycle_bot/demo.mp4";
+import recycle_bot_photo1 from "@/assets/projects/recycle_bot/photo.png";
 
 import fillbo_cover from "@/assets/projects/fillbo/cover.png";
 import fillbo_video1 from "@/assets/projects/fillbo/test.mp4";
@@ -77,13 +74,13 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    id: "stylet3d",
-    title: "Stylet 3D",
+    id: "aemas",
+    title: "AEMAS",
     subtitle: "Motion capture and gesture recognition of a pen for high-precision manipulation and real-time control of a 6DOF industrial robot",
     description: "Motion-capture pen tracked with depth sensing to control a 6DOF industrial robot through high-precision gestures and scaled movements.",
     fullDescription: "This project focused on the development of a motion capture and gesture recognition system based on an Intel RealSense depth camera, designed to track a custom ergonomic pen with high spatial accuracy. The system transforms the pen’s trajectory, orientation, and gesture inputs into precise robotic commands for the real-time control of a 6DOF industrial robot. It also supports scaled manipulation in multiple workspaces, which significantly enhances fine motor control during intricate tasks. These capabilities could enable applications in micro-assembly, precision manufacturing, and other environments that require accurate and adaptable human–robot interaction.",
     tags: ["Motion Capture", "Gesture Recognition", "Robotics", "Intel RealSense", "LiDAR"],
-    image: stylet_cover,
+    image: aemas_cover,
     role: "Project leader",
     teamSize: "4 people",
     startDate: "10/2024",
@@ -105,18 +102,15 @@ export const projects: Project[] = [
       "Fully functional ergonomic pen prototype designed with reliable 6DOF pose estimation"
     ],
     media: [
-      { url: stylet_photo2, type: "image" },
-      { url: stylet_photo3, type: "image" },
-      { url: stylet_photo1, type: "image" },
-      { url: stylet_video1, type: "video" },
-      { url: stylet_video2, type: "video" },
-      { url: stylet_video3, type: "video" },
+      { url: aemas_photo1, type: "image" },
+      { url: aemas_video1, type: "video" },
+      { url: aemas_video2, type: "video" },
     ]
   },
 
   {
-    id: "robot3t",
-    title: "Robot3T",
+    id: "de10lite",
+    title: "DE10-Lite",
     subtitle: "3-DOF anthropomorphic robot with computer vision capable of autonomously playing tic-tac-toe",
     description: "Anthropomorphic 3DOF robot with computer vision for autonomous and real-time Tic Tac Toe gameplay against human users.",
     fullDescription: "This project involved the complete design, fabrication, assembly, and evaluation of an anthropomorphic robot endowed with three degrees of freedom, conceived to autonomously play Tic Tac Toe against a human opponent. The work encompassed detailed CAD modelling, component selection for mechanical and electronic subsystems, the development of a custom PCB, and the implementation of computer vision algorithms that enabled the robot to perceive the game board and execute strategic movements.",
@@ -154,13 +148,13 @@ export const projects: Project[] = [
   },
 
   {
-    id: "rocco",
-    title: "ROCCO",
+    id: "recycle_bot",
+    title: "Recycle-bot",
     subtitle: "Set of tele-manipulated 6DOF robotic arms for handling biological agents in pharmaceutical and scientific applications",
     description: "Telemanipulated dual 6DOF robotic arms designed to replicate human motion for safe handling of biological agents in controlled environments.",
     fullDescription: "This project focused on the design, construction, and programming of a pair of tele-manipulable robotic arms that replicate human arm movements for handling biological agents. These robotic arms are equipped with the flexibility and precision necessary to mimic human dexterity while ensuring safety and efficiency in environments requiring precision handling.",
     tags: ["Robotics", "Telemanipulation", "6DOF", "Biomedical Engineering", "Embedded Systems"],
-    image: rocco_cover,
+    image: recycle_bot_cover,
     role: "Project leader",
     teamSize: "4 people",
     startDate: "08/2022",
@@ -184,8 +178,8 @@ export const projects: Project[] = [
     ],
       
     media: [
-      { url: rocco_video1, type: "video" },
-      { url: rocco_photo1, type: "image" },
+      { url: recycle_bot_video1, type: "video" },
+      { url: recycle_bot_photo1, type: "image" },
     ] // TODO: ADD PHOTOS AND VIDEOS
   },
   
