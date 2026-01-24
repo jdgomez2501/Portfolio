@@ -1,10 +1,13 @@
 import { useState, useEffect } from "react";
+import { useLocation, useNavigate } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const location = useLocation();
+  const navigate = useNavigate();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -26,6 +29,21 @@ const Navigation = () => {
 
   const scrollToSection = (href: string) => {
     setIsMobileMenuOpen(false);
+    
+    // If not on home page, navigate to home with the anchor
+    if (location.pathname !== "/") {
+      navigate("/" + href);
+      // Wait for the page to load and then scroll to the section
+      setTimeout(() => {
+        const element = document.querySelector(href);
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth" });
+        }
+      }, 100);
+      return;
+    }
+    
+    // On home page, scroll to the section
     const element = document.querySelector(href);
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
