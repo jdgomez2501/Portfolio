@@ -1,7 +1,7 @@
 import { useParams, Link } from "react-router-dom";
 import { projects } from "@/data/projects";
 import { Button } from "@/components/ui/button";
-import { ArrowLeft, CheckCircle2, Calendar, Users, Building, Lightbulb } from "lucide-react";
+import { ArrowLeft, CheckCircle2, Calendar, Users, Building, Lightbulb,CheckSquare } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import { motion } from "framer-motion";
 import {
@@ -69,15 +69,6 @@ const ProjectDetail = () => {
             >
               <Carousel className="w-full">
                 <CarouselContent>
-                  <CarouselItem>
-                    <div className="aspect-video overflow-hidden rounded-lg bg-muted">
-                      <img 
-                        src={project.image} 
-                        alt={project.title}
-                        className="w-full h-full object-cover"
-                      />
-                    </div>
-                  </CarouselItem>
                   {project.media && project.media.map((item, index) => (
                     <CarouselItem key={index}>
                       <div className="aspect-video overflow-hidden rounded-lg bg-muted">
@@ -94,7 +85,7 @@ const ProjectDetail = () => {
                           <img 
                             src={item.url} 
                             alt={`${project.title} - Image ${index + 2}`}
-                            className="w-full h-full object-cover"
+                            className="h-full w-full object-contain"
                           />
                         )}
                       </div>
@@ -118,36 +109,6 @@ const ProjectDetail = () => {
                 <p className="text-xl text-muted-foreground italic">{project.subtitle}</p>
               )}
               <div className="h-1 w-20 bg-gradient-primary rounded-full" />
-            </motion.div>
-
-            {/* Tags */}
-            <motion.div 
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.4 }}
-              className="flex flex-wrap gap-2 mb-8"
-            >
-              {project.tags.map((tag) => (
-                <span 
-                  key={tag}
-                  className="px-3 py-1 text-sm rounded-md bg-surface border border-border text-primary font-medium"
-                >
-                  {tag}
-                </span>
-              ))}
-            </motion.div>
-
-            {/* Description */}
-            <motion.div 
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.5 }}
-              className="prose max-w-none mb-12"
-            >
-              <h2 className="text-2xl font-semibold mb-4">Description</h2>
-              <p className="text-lg text-muted-foreground leading-relaxed">
-                {project.fullDescription || project.description}
-              </p>
             </motion.div>
 
             {/* General Information */}
@@ -200,11 +161,61 @@ const ProjectDetail = () => {
                     <div className="flex items-start gap-3 md:col-span-2">
                       <Building className="h-5 w-5 text-primary mt-1" />
                       <div>
-                        <p className="font-semibold">Associated With</p>
+                        <p className="font-semibold">Company / Organisation</p>
                         <p className="text-muted-foreground">{project.associatedWith}</p>
                       </div>
                     </div>
                   )}
+                </div>
+              </motion.div>
+            )}
+
+            {/* Description */}
+            <motion.div 
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.5 }}
+              className="prose max-w-none mb-12"
+            >
+              <h2 className="text-2xl font-semibold mb-4">Description</h2>
+              <p className="text-lg text-muted-foreground leading-relaxed">
+                {project.fullDescription || project.description}
+              </p>
+            </motion.div>
+
+            {/* Tags */}
+            <motion.div 
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.4 }}
+              className="flex flex-wrap gap-2 mb-8"
+            >
+              {project.tags.map((tag) => (
+                <span 
+                  key={tag}
+                  className="px-3 py-1 text-sm rounded-md bg-surface border border-border text-primary font-medium"
+                >
+                  {tag}
+                </span>
+              ))}
+            </motion.div>
+
+            {/* tasks */}
+            {project.tasks && project.tasks.length > 0 && (
+              <motion.div 
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.7 }}
+                className="mb-12"
+              >
+                <h2 className="text-2xl font-semibold mb-6">Tasks</h2>
+                <div className="space-y-3">
+                  {project.tasks.map((task, index) => (
+                    <div key={index} className="flex items-start gap-3">
+                      <CheckSquare className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
+                      <p className="text-muted-foreground">{task}</p>
+                    </div>
+                  ))}
                 </div>
               </motion.div>
             )}
